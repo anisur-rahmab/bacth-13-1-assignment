@@ -7,6 +7,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
@@ -100,7 +101,8 @@
   margin-right: 5px;
 }
 
-.access-btn input, label {
+.access-btn input,
+label {
   color: var(--main-color);
   font-size: 12px;
   font-weight: 600;
@@ -171,7 +173,7 @@
 
 .note .note-box {
   display: flex;
-  align-items:  center;
+  align-items: center;
   justify-content: space-between;
   text-align: center;
   gap: 30px;
@@ -179,7 +181,7 @@
 
 .note-box .note-items {
   border-radius: 5px;
-  padding: 40px 20px 20px;
+  padding: 40px 30px 20px;
   height: 250px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   transition: .5s;
@@ -204,7 +206,7 @@
 .note-items h3 {
   font-size: 17px;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .note-items p {
@@ -264,6 +266,7 @@
 .think-more {
   padding: 0 9% 100px;
 }
+
 .thing-content {
   padding: 50px 0;
   background: var(--bg-color);
@@ -278,7 +281,7 @@
 .thing-content .thing-box .btn {
   display: inline-block;
   margin-bottom: 10px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
   font-weight: 400;
   font-size: 13px;
 }
@@ -291,4 +294,65 @@
   font-size: 13px;
   color: var(--second-text-color);
   font-weight: 400;
+}
+
+/* footer section style */
+.footer {
+  background: #001931;
+  padding: 80px 9% 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-content .social-icon h5 {
+  color: var(--white-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-content .social-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--main-color);
+  background: var(--main-color);
+  margin-right: 7px;
+  border-radius: 5px;
+  color: #001931;
+  transition: .5s;
+}
+
+.footer-content .social-icon a i {
+  color: #001931;
+  font-size: 18px;
+  transition: .5s;
+}
+
+.footer-content .social-icon a:hover i {
+  color: var(--main-color);
+}
+
+.footer-content .social-icon a:hover {
+  background: transparent;
+}
+
+.footer hr {
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.footer .copy-right {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer .copy-right p {
+  color: var(--white-color);
+  font-size: 13px;
+  font-weight: 200;
 }
