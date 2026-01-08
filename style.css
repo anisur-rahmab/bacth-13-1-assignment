@@ -16,7 +16,7 @@
   --text-color: #111;
   --white-color: #fff;
   --second-text-color: #787878;
-  --main-color: #1fa356f1;
+  --main-color: #1d9951f1;
 }
 
 /* header section style */
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 100px 0 200px;
+  margin: 100px 0;
   padding: 120px 0 200px;
 }
 
@@ -146,3 +146,149 @@
   margin: 0 5px;
 }
 
+/* note section style */
+.note {
+  width: 100%;
+  padding: 0 9% 50px;
+}
+
+.heading-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.heading-text p {
+  font-size: 13px;
+  color: var(--second-text-color);
+  line-height: 1.4;
+}
+
+.note .note-box {
+  display: flex;
+  align-items:  center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+
+.note-box .note-items {
+  border-radius: 5px;
+  padding: 40px 20px 20px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.note-box .note-items:hover {
+  transform: translateY(-7px);
+}
+
+.note-items i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--main-color);
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--white-color);
+}
+
+.note-items h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.note-items p {
+  font-size: 13px;
+  color: var(--second-text-color);
+  pointer-events: none;
+}
+
+/* brain section style */
+.brain {
+  padding: 100px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.brain-text small {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.brain-text p {
+  font-size: 13px;
+  color: var(--second-text-color);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.brain-text ul li {
+  list-style: none;
+  margin: 15px 0;
+  font-size: 12px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.brain-text ul li i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: var(--main-color);
+  border-radius: 50%;
+  vertical-align: middle;
+  color: var(--white-color);
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* think-more section style */
+.think-more {
+  padding: 0 9% 100px;
+}
+.thing-content {
+  padding: 50px 0;
+  background: var(--bg-color);
+  border-radius: 8px;
+}
+
+.thing-content .thing-box {
+  text-align: center;
+  margin-top: -15px;
+}
+
+.thing-content .thing-box .btn {
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.thing-content .thing-box .btn i {
+  vertical-align: middle;
+}
+
+.thing-content .thing-box p {
+  font-size: 13px;
+  color: var(--second-text-color);
+  font-weight: 400;
+}
